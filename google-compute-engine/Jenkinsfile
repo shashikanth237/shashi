@@ -6,7 +6,11 @@ pipeline {
   }
      
     stages {
-        
+              stage ('checkout'){
+            steps {
+                git branch: 'master', url: 'https://github.com/ishaqmdgcp/faheem.git'
+            }
+        }
 		stage('Set creds') {
             steps {
               
