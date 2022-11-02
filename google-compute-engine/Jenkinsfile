@@ -17,6 +17,7 @@ pipeline {
                 sh 'echo $SVC_ACCOUNT_KEY | base64 -d > ./google-compute-engine/jenkins.json'
               sh 'pwd'
       sh 'cd google-compute-engine'
+                sh 'ls'
                        
                
             }
