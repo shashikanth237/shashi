@@ -8,7 +8,7 @@ pipeline {
     stages {
               stage ('checkout'){
             steps {
-                git branch: 'master', url: 'https://github.com/ishaqmdgcp/faheem.git'
+                git branch: 'master', url: 'https://github.com/shashikanth237/shashi.git'
             }
         }
 		stage('Set creds') {
@@ -26,7 +26,8 @@ pipeline {
 	 steps {
 		 dir('google-compute-engine')
     
-        sh 'gcloud auth activate-service-account jenkins@mi-dev-lab.iam.gserviceaccount.com --key-file=jenkins.json'
+        sh 'gcloud auth activate-service-account sample-sa@test-project-sasi.iam.gserviceaccount.com
+ --key-file=jenkins.json'
     }
     }
  	 
